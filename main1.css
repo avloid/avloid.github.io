@@ -2715,15 +2715,15 @@ body::after {
 #app-mount .progress-1S-TDF {								/* voicesettings		voicebar							*/
 	background-color: rgba(var(--transparencycolor), .3);
 }
-.icon-1fWS75[src="/assets/ebfb23f0cdb11b1871ed8beb3f9ec0ee.svg"],
-.icon-1fWS75[src="/assets/c28317e203e00b2d7390d5ece2399228.svg"] {
-	-webkit-mask: url(https://discord.com/assets/c28317e203e00b2d7390d5ece2399228.svg) center/contain no-repeat;
-	background-color: var(--header-primary);
-	object-position: -999999px -999999px;
-}
 
 //here
 
+.icon-1fWS75[src="/assets/8c49c7d4a59675bb6ceaee1bb80b5803.png"],
+.icon-1fWS75[src="/assets/e8b66317ab0dc9ba3bf8d41a4f3ec914.png"] {
+	-webkit-mask: url(https://discord.com/assets/e8b66317ab0dc9ba3bf8d41a4f3ec914.png) center/contain no-repeat;
+	background-color: var(--header-primary);
+	object-position: -999999px -999999px;
+}
 .userSettingsVoice-1_dzjw .media-engine-video {				/* voicesettings		video								*/
 	background: transparent;
 }
