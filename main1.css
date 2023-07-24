@@ -2721,12 +2721,9 @@ body::after {
 	background-color: var(--header-primary);
 	object-position: -999999px -999999px;
 }
-.icon-1fWS75[src="/assets/8c49c7d4a59675bb6ceaee1bb80b5803.png"],
-.icon-1fWS75[src="/assets/e8b66317ab0dc9ba3bf8d41a4f3ec914.png"] {
-	-webkit-mask: url(https://discord.com/assets/e8b66317ab0dc9ba3bf8d41a4f3ec914.png) center/contain no-repeat;
-	background-color: var(--header-primary);
-	object-position: -999999px -999999px;
-}
+
+//here
+
 .userSettingsVoice-1_dzjw .media-engine-video {				/* voicesettings		video								*/
 	background: transparent;
 }
