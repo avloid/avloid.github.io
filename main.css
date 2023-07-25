@@ -100,7 +100,7 @@
   --button-outline-primary-background-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
   --button-outline-primary-text-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
   --button-outline-primary-border-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
-  --modal-background: rgba(0, 0, 0, 0.95);
+  --modal-background: rgba(0, 0, 0, 0.5);
   --modal-footer-background: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
   --scrollbar-auto-thumb: var(--scroll-thumb-color);
   --scrollbar-thin-thumb: var(--scroll-thumb-color);
@@ -144,7 +144,6 @@
 
 :root {
   --app-background: url("https://avloid.github.io/Hyperborea.png");
-  --app-background-color: rgba(0, 0, 0, 0.5);;
   --main-color: #992727;
   --main-color-selected: #aa2f2f;
   --main-color-semitransparent: #d4393926;
@@ -162,8 +161,7 @@
 }
 
 body::after {
-  background-image: var(--app-background) !important;
-  background-color: var(--app-background-color) !important;
+  background-image: var(--app-background), rgba(0, 0 , 0, 0.5) !important;
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
@@ -339,7 +337,7 @@ input:focus {
 [class*=tooltipGrey],
 [class*=tooltipPrimary],
 [class*=tooltipGreen] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   border: 2px solid rgb(0, 0, 0);
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
@@ -351,7 +349,7 @@ input:focus {
 }
 
 [class^=layerContainer-] > [class*=toolbar] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   border: 2px solid rgb(0, 0, 0);
 }
 [class^=layerContainer-] > [class*=toolbar]::before {
@@ -387,7 +385,7 @@ input:focus {
   background: var(--main-color-semitransparent-selected) !important;
 }
 [class^=channelTextArea] > [class^=container-] > [class^=containerBackground] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   border-color: transparent;
 }
 [class^=channelTextArea] [class*=inner] [class^=buttons] > [class*=grow] {
@@ -494,10 +492,10 @@ input:focus {
   background: transparent !important;
 }
 [class^=layerContainer-] [class^=layer-] [class*=reactors-] div:not([class*=contents]) {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 [class^=layerContainer-] [class^=layer-] [class*=menu-] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   box-shadow: none !important;
 }
 [class^=layerContainer-] [class^=layer-] [class*=menu-] [class*=wrapper-] img {
@@ -506,7 +504,7 @@ input:focus {
 }
 
 [class*=messagesPopoutWrap] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class^=uploadDropModal] [class^=bgScale] {
@@ -517,11 +515,11 @@ input:focus {
 }
 
 [class^=uploadModal] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   box-shadow: none !important;
 }
 [class^=uploadModal] [class^=footer] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 [class^=uploadModal] label[class*=checked] [class*=checkbox] {
   background: var(--main-color) !important;
@@ -581,11 +579,11 @@ input:focus {
 }
 
 [class*=message] [class*=buttonContainer] [class*=container] [class*=wrapper] {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 [class*=recentMentionsPopout] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class*=layer] #emoji-picker-tab-panel[class*=wrapper] {
@@ -603,11 +601,11 @@ input:focus {
 }
 
 [class^=threadSidebar] {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 [class*=layer] [class*=browser] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class*=hasThread] [class*=cta] {
@@ -738,7 +736,7 @@ input:focus {
 }
 
 [id*=popout] > [class*=container] {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: none !important;
 }
 [id*=popout] > [class*=container] [class*=resultsGroup] {
@@ -1204,7 +1202,7 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class*=layer] [class*=animator] [class*=container][class*=scrollerBase] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class*=panels] {
@@ -1229,10 +1227,10 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class*=focusLock] [class*=modal] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 [class*=focusLock] [class*=modal] [class*=horizontalReverse] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 [class*=focusLock] [class*=modal] [class*=radioBar] > div:not([class*=info]) circle {
   fill: var(--main-color) !important;
@@ -1338,11 +1336,11 @@ div[class^=bannedUser-][class*=card-] span {
 }
 
 [id^=popout] [class^=popoutWrapper] > [class^=scroller] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class^=quickSelectPopout] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 button[class*=participantsButton] {
@@ -1356,7 +1354,7 @@ button[class*=participantsButton]:hover {
 }
 
 [class^=liveQualityIndicator] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   color: var(--button-text) !important;
 }
 
@@ -1366,7 +1364,7 @@ button[class*=participantsButton]:hover {
 }
 
 [class^=tileChild-] button > [class*=button-] {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.5);
   color: var(--button-text);
 }
 [class^=tileChild-] button > [class*=button-]:hover {
@@ -1495,8 +1493,7 @@ button[class*=participantsButton]:hover {
 }
 
 [class^=userPopoutInner] {
-  background: var(--profile-background), !important;
-  background-color: var(--profile-background-color), rgba(0, 0, 0, 0.5) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.5) !important;
   background-size: cover;
 }
 [class^=userPopoutInner] [class^=bodyInnerWrapper],
@@ -1596,7 +1593,7 @@ button[class*=participantsButton]:hover {
 }
 
 [class*=profileBanner-] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class*=popoutBanner]:not([class*=BannerPremium])[style] {
@@ -1827,7 +1824,7 @@ button[class*=participantsButton]:hover {
 }
 
 [id^=popout] [class*=searchableSelect] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   box-shadow: none !important;
 }
 
@@ -1877,7 +1874,7 @@ button[class*=participantsButton]:hover {
 }
 
 [class*=accountProfileCard] {
-  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.5) !important;
 }
 [class*=accountProfileCard] [class*=fieldButton-] {
   background: var(--main-color) !important;
@@ -1889,7 +1886,7 @@ button[class*=participantsButton]:hover {
 }
 
 [class*=profileBannerPreview] {
-  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.5) !important;
 }
 
 [class^=standardSidebarView] > [class^=sidebarRegion] [class^=info-] > * {
@@ -2173,7 +2170,7 @@ button[class*=participantsButton]:hover {
 }
 
 [class^=carousel] [class^=tier-] {
-  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.5) !important;
 }
 [class^=carousel] [class^=tier-] [class*=tierHeader] {
   background: rgba(0, 0, 0, 0.1) !important;
@@ -2198,7 +2195,7 @@ button[class*=participantsButton]:hover {
 }
 
 [class^=tiers] > [class^=tier-] {
-  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.5) !important;
 }
 [class^=tiers] > [class^=tier-] [class*=tierHeader] {
   background: rgba(0, 0, 0, 0.1) !important;
@@ -2221,13 +2218,13 @@ button[class*=participantsButton]:hover {
 }
 
 .ChannelDms-channelpopout-popout {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 .ChannelDms-channelpopout-popout > [role=button] {
   background-color: var(--main-color-semitransparent-selected) !important;
 }
 .ChannelDms-channelpopout-popout > button {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   border-radius: 5px !important;
 }
 
@@ -2238,7 +2235,7 @@ button[class*=participantsButton]:hover {
 [id^=popout] > div > [role=dialog],
 [id^=popout] > div > [class^=container],
 [id^=popout] > div > [class^=popout] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   border-radius: 10px;
 }
 
@@ -2248,11 +2245,11 @@ button[class*=participantsButton]:hover {
 }
 
 [role=dialog] [class^=contentWrapper] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class^=popoutContainer] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 [class^=popoutContainer] button {
   background: var(--main-color);
@@ -2268,11 +2265,11 @@ button[class*=participantsButton]:hover {
 }
 
 [class*=noiseCancellationPopout] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class*=keyboardShortcutsModal] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class^=quickswitcher] {
@@ -2281,17 +2278,17 @@ button[class*=participantsButton]:hover {
 }
 
 [class^=quickswitcher] input {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 [class*=focusLock] [class*=root] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   box-shadow: none !important;
 }
 [class*=focusLock] [class*=root] [class*=directionRow],
 [class*=focusLock] [class*=root] [class*=body],
 [class*=focusLock] [class*=root] [class*=topSection] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 [class*=focusLock] [class*=root] [class*=avatar] {
   border: none;
@@ -2428,7 +2425,7 @@ div[class^=notice] button:hover {
 }
 
 [class*=streamPreviewWrapper] [class*=streamPreview] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   border: transparent;
 }
 [class*=streamPreviewWrapper] [class*=streamPreview] [class*=previewContainer] {
