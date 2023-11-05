@@ -24,6 +24,12 @@ body {
     color: wheat;
 }
 
+#blog {
+    margin: 20px;
+    text-align: center;
+    color: wheat;
+}
+
 #webpage {
     text-align: center;
     margin-top: 20px;
