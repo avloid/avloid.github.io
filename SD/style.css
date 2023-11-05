@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+#center {
+    background-color: #1b1b1b;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) { 
+    #center {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #Crusader {
+        height: 300px;
+    }
+}
+
+a {
+    color: rgb(128, 158, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 60, 255);
+}
+
+h2 {
+    color: wheat;
+}
