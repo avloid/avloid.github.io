@@ -30,7 +30,6 @@ body {
     color: wheat;
 }
 
-
 #webpage {
     text-align: center;
     margin-top: 20px;
@@ -55,6 +54,14 @@ figcaption {
 
 ul li {
     list-style: none;
+}
+
+ul li a {
+    color: rgb(128, 158, 255);
+}
+
+ul li a:hover {
+    color: rgb(0, 60, 255);
 }
 
 p {
