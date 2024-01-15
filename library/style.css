@@ -42,7 +42,13 @@ figcaption {
     margin: auto;
     display: block;
     text-align: center;
-    max-width: 100%;
+    margin-left: 200px;
+}
+
+@media (max-width: 925px){
+    .resright {
+        margin-left: 100px;
+    }
 }
 
 #list1 {
@@ -53,6 +59,28 @@ figcaption {
     list-style-type: disc;
 }
 
+@media (max-width: 625px){
+    .resright {
+        margin-left: 50px;
+    }
+    #list1 {
+        transform:translateX(0px);
+    }
+}
+
+@media (max-width: 400px){
+    #list1 {
+        transform:translateX(-50px);
+        width: 160%;
+    }
+}
+
+@media (max-width: 250px){
+    #list1 {
+        transform:translateX(0px);
+        width: auto;
+    }
+}
 
 p {
     text-align: center;
