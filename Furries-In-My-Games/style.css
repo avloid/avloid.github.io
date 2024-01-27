@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+body {
+    background-color: #13151a;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13151a;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#intro {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#think {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#answer {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+a {
+    color: rgb(128, 158, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 60, 255);
+}
+
+h2 {
+    color: wheat;
+}
+
+p {
+    font-size: 1vw;
+    line-height: 150%;
+}
+
+@media (max-width: 1200px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    p {
+        font-size: 2vw;
+    }
+    #center {
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    p {
+        font-size: 3vw;
+    }
+    #center {
+        width: 80%;
+    }
+}
